@@ -114,8 +114,8 @@ This project is licensed under the MIT License.
 
 ## 👤 Author
 
-**VNX**
-- GitHub: [@vnx](https://github.com/vnx)
+**Vnxsitoow**
+- GitHub: [@Vnxsitoow](https://github.com/Vnxsitoow)
 
 ## 🐛 Bug Reports
 
