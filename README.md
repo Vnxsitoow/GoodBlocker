@@ -1,42 +1,58 @@
-GoodBlocker
+# GoodBlocker
+
 A powerful and flexible Minecraft plugin to block commands on your server.
 
-📋 Description
+## 📋 Description
+
 GoodBlocker is a Spigot/Paper plugin that allows server administrators to block specific commands from being used by players. It features a flexible configuration system, wildcard support, and an intuitive command interface.
 
-✨ Features
-Block any command - Prevent players from using specific commands
-Wildcard support - Use * to block groups of commands (e.g., minecraft:*)
-Permission system - Bypass blocks with permissions
-Dynamic management - Add/remove blocked commands without editing files
-Customizable messages - Full color code support
-Logging system - Track blocked command attempts
-Tab completion - Easy command usage
-Lightweight - Minimal performance impact
-🔧 Installation
-Download the latest GoodBlocker.jar from releases
-Place the file in your server's plugins/ folder
-Restart your server
-Configure the plugin in plugins/GoodBlocker/config.yml
-Use /gb reload to apply changes
-📦 Requirements
-Minecraft 1.17 or higher
-Spigot, Paper, or any compatible server software
-Java 16 or higher
-🎮 Commands
-Command Description Permission
-/gb reload Reload the configuration goodblocker.reload
-/gb list List all blocked commands goodblocker.admin
-/gb add <command> Add a command to the block list goodblocker.admin
-/gb remove <command> Remove a command from the block list goodblocker.admin
-Aliases: /goodblocker, /gb, /blocker
+## ✨ Features
 
-🔐 Permissions
-Permission Description Default
-goodblocker.admin Full access to the plugin OP
-goodblocker.bypass Bypass all command blocks OP
-goodblocker.reload Reload the configuration OP
-⚙️ Configuration
+- **Block any command** - Prevent players from using specific commands
+- **Wildcard support** - Use `*` to block groups of commands (e.g., `minecraft:*`)
+- **Permission system** - Bypass blocks with permissions
+- **Dynamic management** - Add/remove blocked commands without editing files
+- **Customizable messages** - Full color code support
+- **Logging system** - Track blocked command attempts
+- **Tab completion** - Easy command usage
+- **Lightweight** - Minimal performance impact
+
+## 🔧 Installation
+
+1. Download the latest `GoodBlocker.jar` from releases
+2. Place the file in your server's `plugins/` folder
+3. Restart your server
+4. Configure the plugin in `plugins/GoodBlocker/config.yml`
+5. Use `/gb reload` to apply changes
+
+## 📦 Requirements
+
+- Minecraft 1.17 or higher
+- Spigot, Paper, or any compatible server software
+- Java 16 or higher
+
+## 🎮 Commands
+
+| Command | Description | Permission |
+|---------|-------------|------------|
+| `/gb reload` | Reload the configuration | `goodblocker.reload` |
+| `/gb list` | List all blocked commands | `goodblocker.admin` |
+| `/gb add <command>` | Add a command to the block list | `goodblocker.admin` |
+| `/gb remove <command>` | Remove a command from the block list | `goodblocker.admin` |
+
+**Aliases:** `/goodblocker`, `/gb`, `/blocker`
+
+## 🔐 Permissions
+
+| Permission | Description | Default |
+|------------|-------------|---------|
+| `goodblocker.admin` | Full access to the plugin | OP |
+| `goodblocker.bypass` | Bypass all command blocks | OP |
+| `goodblocker.reload` | Reload the configuration | OP |
+
+## ⚙️ Configuration
+
+```yaml
 # List of blocked commands
 blocked-commands:
   - "op"
@@ -59,42 +75,61 @@ messages:
 
 # Enable logging of blocked command attempts
 enable-logging: true
+```
 
-🎯 Usage Examples
-Block a single command
+## 🎯 Usage Examples
+
+### Block a single command
+```
 /gb add gamemode
+```
 
-Block all commands from a namespace
+### Block all commands from a namespace
+```
 /gb add minecraft:*
+```
 
-Remove a blocked command
+### Remove a blocked command
+```
 /gb remove gamemode
+```
 
-View all blocked commands
+### View all blocked commands
+```
 /gb list
+```
 
-Reload configuration
+### Reload configuration
+```
 /gb reload
+```
 
-🤝 Contributing
+## 🤝 Contributing
+
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-📝 License
+## 📝 License
+
 This project is licensed under the MIT License.
 
-👤 Author
-Vnxsitoow
+## 👤 Author
 
-GitHub: @Vnxsitoow
-🐛 Bug Reports
+**VNX**
+- GitHub: [@vnx](https://github.com/vnx)
+
+## 🐛 Bug Reports
+
 If you find a bug, please open an issue on GitHub with:
+- Minecraft version
+- Server software and version
+- Plugin version
+- Steps to reproduce
+- Error logs (if any)
 
-Minecraft version
-Server software and version
-Plugin version
-Steps to reproduce
-Error logs (if any)
-💡 Support
+## 💡 Support
+
 For support, please open an issue on GitHub or contact the author.
+
+---
 
 Made with ❤️ for the Minecraft community
