@@ -2,7 +2,7 @@ name: GoodBlocker
 version: '1.0.0'
 main: com.vnx.goodblocker.GoodBlocker
 api-version: 1.17
-author: VNX
+author: Vnxsitoow
 description: Plugin to block commands in Minecraft
 website: https://github.com/Vnxsitoow/GoodBlocker
 
