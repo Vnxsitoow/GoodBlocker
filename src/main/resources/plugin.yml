@@ -1,0 +1,25 @@
+name: GoodBlocker
+version: '1.0.0'
+main: com.vnx.goodblocker.GoodBlocker
+api-version: 1.17
+author: VNX
+description: Plugin to block commands in Minecraft
+website: https://github.com/Vnxsitoow/GoodBlocker
+
+commands:
+  goodblocker:
+    description: Main GoodBlocker command
+    usage: /<command> [reload|list|add|remove]
+    aliases: [gb, blocker]
+    permission: goodblocker.admin
+
+permissions:
+  goodblocker.admin:
+    description: Full access to the plugin
+    default: op
+  goodblocker.bypass:
+    description: Allows bypassing command blocks
+    default: op
+  goodblocker.reload:
+    description: Allows reloading the configuration
+    default: op

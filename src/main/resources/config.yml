@@ -1,0 +1,32 @@
+# ========================================
+#        GoodBlocker Configuration
+# ========================================
+
+# List of blocked commands
+# You can use * as a wildcard at the end (example: "minecraft:*" will block all minecraft commands)
+blocked-commands:
+  - "op"
+  - "deop"
+  - "stop"
+  - "reload"
+  - "minecraft:give"
+  - "plugins"
+  - "pl"
+  - "version"
+  - "ver"
+
+# Plugin messages
+messages:
+  blocked-command: "&c&lAccess Denied! &7This command is blocked."
+  no-permission: "&cYou don't have permission to use this command."
+  reload-success: "&aConfiguration reloaded successfully!"
+  command-added: "&aCommand added to the block list."
+  command-removed: "&aCommand removed from the block list."
+
+# Enable logging of blocked command attempts
+enable-logging: true
+
+# Permissions:
+# goodblocker.admin - Full access to the plugin
+# goodblocker.bypass - Allows bypassing command blocks
+# goodblocker.reload - Allows reloading the configuration
